@@ -1,14 +1,14 @@
 import React from 'react'
 
-const Todo = () => {
+const Todo = (props) => {
     return (
-        <div class="task">
-            <div class="content">
-                <input value='read book' class="text" type="text" readonly="readonly" />
+        <div className="task">
+            <div className="content">
+                <input value={props.title} className="text" type="text" readOnly/>
             </div>
-            <div class="actions">
-                <button class="edit">Edit</button>
-                <button class="delete">Delete</button>
+            <div className="actions">
+                <button className="edit">Edit</button>
+                <button className="delete">Delete</button>
             </div>
         </div>
     )
