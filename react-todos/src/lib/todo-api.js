@@ -9,3 +9,20 @@ export async function getTodos(){
     }
     return data;
 }
+
+export async function createTodo(body){
+    const response = await fetch(`${BASE_URL}/todos`, {
+        method: 'POST',
+        body: JSON.stringify(body),
+        headers: {
+            'Content-Type': 'application/json',
+        }
+    });
+
+    const data = await response.json();
+
+    if (!response.ok){
+        throw new Error(data.message || 'Could not create todo')
+    }
+    return data;
+}
