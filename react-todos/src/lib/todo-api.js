@@ -26,3 +26,16 @@ export async function createTodo(body){
     }
     return data;
 }
+
+export async function deleteTodo(id){
+    const response = await fetch(`${BASE_URL}/todos/${id}`, {
+        method: 'DELETE'
+    });
+    const data = await response.json();
+
+    if(!response.ok){
+        return new Error(data.message || 'Could not create todo')
+    }
+
+    return data;
+}

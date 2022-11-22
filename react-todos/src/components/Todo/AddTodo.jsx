@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
-import { createTodo } from '../../lib/todo-api';
 
-const AddTodo = () => {
+const AddTodo = (props) => {
     const [todoTitle, setTodoTitle] = useState('');
 
     const formSubmitHandler = async (e) => {
@@ -10,8 +9,8 @@ const AddTodo = () => {
             title: todoTitle,
             completed: false
         }
-        const res = await createTodo(todo);
-        console.log(res);
+        props.add(todo)
+        setTodoTitle('');
     }
 
     return (

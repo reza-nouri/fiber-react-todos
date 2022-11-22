@@ -1,6 +1,9 @@
 import React from 'react'
 
 const Todo = (props) => {
+    const deleteHandler = async (e) => {
+        props.delete(props.id);
+    }
     return (
         <div className="task">
             <div className="content">
@@ -8,7 +11,7 @@ const Todo = (props) => {
             </div>
             <div className="actions">
                 <button className="edit">Edit</button>
-                <button className="delete">Delete</button>
+                <button className="delete" onClick={deleteHandler}>Delete</button>
             </div>
         </div>
     )
