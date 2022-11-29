@@ -1,4 +1,4 @@
-# persian-admin-panel
+# fiber-react-todos
 <h3 align="center" >
 مدیریت کارها با ری اکت و فایبر(golang)
 </h3>
