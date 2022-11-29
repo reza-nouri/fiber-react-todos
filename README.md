@@ -7,7 +7,7 @@
 <div align="right" dir="rtl">
    #### لیست پکیج های بک اند(golang)
    <br/>
-  |نام | کاربرد |
+  | name | link |
   |-------|-----|
   | [ fiber ](https://github.com/gofiber/fiber)| فریمورک وب |
   | [ gorm ](https://github.com/go-gorm/gorm) | ارتباط با دیتابیس |
