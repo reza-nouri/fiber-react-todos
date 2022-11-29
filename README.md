@@ -9,6 +9,6 @@
    <br/>
   | name | link |
   |-------|-----|
-  | [ fiber ](https://github.com/gofiber/fiber)| فریمورک وب |
-  | [ gorm ](https://github.com/go-gorm/gorm) | ارتباط با دیتابیس |
+  | [ fiber ](https://github.com/gofiber/fiber)| fiber |
+  | [ gorm ](https://github.com/go-gorm/gorm) | gorm |
 </div>
