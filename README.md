@@ -4,7 +4,7 @@
 اپلیکشن فهرست کار با ری اکت و فایبر(golang)
 </h3>
 
-<div align="right" dir="rtl">
+<div >
    #### لیست پکیج های بک اند(golang)
    <br/>
   | name | link |
