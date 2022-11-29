@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { createTodo, deleteTodo, getTodos } from '../../lib/todo-api';
+import { createTodo, deleteTodo, editTodo, getTodos } from '../../lib/todo-api';
 import AddTodo from './AddTodo';
 import Todo from './Todo'
 
@@ -19,26 +19,29 @@ const TodoList = () => {
       const tempTodos = todos.filter(todo => todo.id !== id);
       setTodos(tempTodos);
     }
-    console.log(res);
   }
 
   const addHandler = async (todo) => {
     const res = await createTodo(todo);
-    if(res.id !== 0){
+    if (res.id !== 0) {
       setTodos(oldTodos => [...oldTodos, res])
     }
-    console.log(res);
+  }
+
+  const editHandler = async (body) => {
+    const res = await editTodo(body);
+    console.log(res)
   }
 
   const todosList = todos.map((todo) =>
-    <Todo delete={deleteHandler} key={todo.id} id={todo.id} title={todo.title} />
+    <Todo delete={deleteHandler} edit={editHandler} key={todo.id} id={todo.id} title={todo.title} />
   );
 
   return (
     <React.Fragment>
       <header>
         <h1>Task List</h1>
-        <AddTodo add={addHandler}/>
+        <AddTodo add={addHandler} />
       </header>
       <main>
         <section className="task-list">

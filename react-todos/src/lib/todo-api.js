@@ -39,3 +39,21 @@ export async function deleteTodo(id){
 
     return data;
 }
+
+export async function editTodo(body){
+    const response = await fetch(`${BASE_URL}/todos/${body.id}`, {
+        method: 'PUT',
+        body: JSON.stringify(body),
+        headers: {
+            'Content-Type': 'application/json',
+        }
+    });
+
+    const data = await response.json();
+
+    if (!response.ok){
+        throw new Error(data.message || 'Could not edit todo');
+    }
+
+    return data;
+}
