@@ -7,11 +7,13 @@
 
   #### لیست پکیج های فنی بک اند
 
-  شروع پروژه با استفاده از cra یا همان create-react-app  است . 
-
   |نام | کاربرد |
   |-------|-----|
   | [ fiber ](https://github.com/gofiber/fiber)| وب فریمورک |
   | [ gorm ](https://github.com/go-gorm/gorm) | ارتباط با دیتابیس |
+
+  شروع پروژه
+  در دایرکتوری react-todos دستور npm install در cmd
+  در دایرکتوری fiber-todos دستور go mod tidy در cmd
 
 </div>
