@@ -1,19 +1,39 @@
-# fiber-react-todos
-<h3 align="center" >
-مدیریت کارها با ری اکت و فایبر(golang)
-</h3>
+# Todo app with React App and golang(fiber web freamwork)
+Sample todo app built with the React/ReactDOM framework for front end . For the accompanying documentation, see
+[Understanding client-side JavaScript frameworks
+: React tutorials](https://wiki.developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks#React_tutorials)..
 
-<div align="right" dir="rtl">
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-  #### لیست پکیج های فنی بک اند
+And we use [fiber](https://github.com/gofiber/fiber) (golang web freamwok) for backend.
 
-  |نام | کاربرد |
-  |-------|-----|
-  | [ fiber ](https://github.com/gofiber/fiber)| وب فریمورک |
-  | [ gorm ](https://github.com/go-gorm/gorm) | ارتباط با دیتابیس |
+## Stack
 
-  شروع پروژه
-  در دایرکتوری react-todos دستور npm install در cmd
-  در دایرکتوری fiber-todos دستور go mod tidy در cmd
+- Create React App
+- React Hooks
+- Fiber
+- Gorm
 
-</div>
+Quick Start
+-----------
+
+```shell
+$ git clone https://github.com/reza-nouri/fiber-react-todos
+$ cd treact-todos
+$ npm install
+$ npm start
+$ cd fiber-todos
+$ go mod tidy
+```
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+The following sections are recommended:
+
+- [Code Splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- [Tutorial react hooks](https://reactjs.org/docs/hooks-intro.html)
+- [Fiber web freamword](https://docs.gofiber.io/)
+- [Gorm](https://github.com/go-gorm/gorm)
+
