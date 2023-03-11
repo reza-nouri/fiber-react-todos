@@ -24,6 +24,7 @@ $ npm install
 $ npm start
 $ cd fiber-todos
 $ go mod tidy
+$ go run .
 ```
 
 ## Learn More
